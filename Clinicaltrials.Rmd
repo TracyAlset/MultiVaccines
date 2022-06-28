@@ -122,4 +122,11 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 fisherXY(newdata$vaxStatus,newdata$infected)
 ```
 
+First with first+new: the p value is less than 0.05 so there is a significant different. meaning that there is a reason why taking the first+new vaccines is better than just taking the first.
 
+The p value for first and new is lower than 0.05 but it's not as low as first with first+new , showing that the difference between first and first+new is bigger meaning that first+new is the best then new then first.
+ and using the same concept for comparison for the other tests we can see that first+new is the most effective , then new, then first.
+ 
+ 
+ 
+ 
