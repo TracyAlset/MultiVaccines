@@ -48,7 +48,7 @@ chisqtestGC(table1)
 fisher.test(table1 ,simulate.p.value=TRUE)
 ```
 
-
+the p value is very low so we can't see that there is a significant difference.
 
 
 
