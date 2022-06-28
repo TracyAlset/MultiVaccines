@@ -30,7 +30,7 @@ barchartGC(~infected+ vaxStatus,data=newdata, type="percent")
 
 It seems that the people who weren't affected by covid and took the vaccines have the same percentage. Out of the people who got affected: the highest numbers wee for those who didn't take the vaccine, then comes just taking the first , after that it's just taking the new vaccine, and the best situation with the least number of people infected is taking both the first and new vaccine.
 
-
+###Numerical results:
 ```{r}
 table1 <- xtabs(~infected + vaxStatus, data=newdata)
 rowPerc(table1)
@@ -38,7 +38,16 @@ colPerc(table1)
 ```
 
 The first row in the first table represents the first graph, and it shows that the number of people not infected for each category of vaccination is almost the same. the second row represents the second graph, where we see that the highest number of people infected is from the unvaccinated group , and then first, then new , and the one with the least infections is first and new.
-and then the second table shows the oercentage of people who got infected and didn't get infected in each category of vaccination.and it shows that the first+new group has the least percentage of infection, while the none group has the highest percentade of infection.
+and then the second table shows the percentage of people who got infected and didn't get infected in each category of vaccination.and it shows that the first+new group has the least percentage of infection, while the none group has the highest percentage of infection.
+
+
+###Inferential results:
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1 ,simulate.p.value=TRUE)
+```
+
 
 
 
